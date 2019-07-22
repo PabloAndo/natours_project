@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 /*
 COLORS:
 
@@ -6,12 +11,6 @@ Medium green: #55c57a
 Dark green: #28b485
 
 */
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
 body {
   font-family: 'Lato', sans-serif;
@@ -48,6 +47,7 @@ body {
   top: 40%; /* In relation to the parent*/
   left: 59%;
   transform: translate(-50%, -50%); /* to make the element exactly in the center*/
+  text-align: center; /* to center the button */
 }
 
 .heading-primary {
@@ -55,6 +55,7 @@ body {
   text-transform: uppercase;
 
   backface-visibility: hidden; /* To stop shaky animations occur*/
+  margin-bottom: 60px; /* to move the button */
 }
 
 .heading-primary-main {
@@ -112,4 +113,29 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 15px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+  background-color: #fff;
+  color: #777;
 }
