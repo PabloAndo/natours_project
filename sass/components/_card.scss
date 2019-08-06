@@ -12,6 +12,7 @@
     top: 0;
     left: 0;
     width: 100%;
+    -webkit-backface-visibility: hidden;
     backface-visibility: hidden; // Hide the backface of an element when rotating
     border-radius: 3px;
     overflow: hidden; // To not let the images overflowing the parent element
